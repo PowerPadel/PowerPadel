@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO3pzj2HBQhI_CZSXcDeVk_XdkF1yOzRZM4A&usqp=CAU" style="width:100%">
+   <a href="https://powerpadel.github.io/PowerPadel/PadelForce" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>Home</p>
+  </a>
+  <a href="https://powerpadel.github.io/PowerPadel/Sesions" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-calendar w3-xxlarge"></i>
+    <p>Sessions</p>
+  </a>
+  <a href="https://powerpadel.github.io/PowerPadel/MyProgress" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-line-chart w3-xxlarge"></i>
+    <p>MyProgress</p>
+  </a>
+  <a href="https://powerpadel.github.io/PowerPadel/LeaderBoard" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-globe w3-xxlarge"></i>
+    <p>LeaderBoard</p>
+  </a>
+  <a href="https://powerpadel.github.io/PowerPadel/Profile" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>Profile</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:20% !important">Home</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:20% !important">Sessions</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:20% !important">Leaderboard</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:20% !important">Progress</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:20% !important">MyProfile</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+<!-- Page Content -->
+ <div  class="w3-content  w3-text-white w3-padding-64 w3-center " id="MyProfile">
+    <h2 class="w3-text-white w3-center">LeaderBoard</h2>
+    <hr  class="w3-opacity w3-middle">
+<section class="webdesigntuts-workshop">
+	<form action="" method="">		    
+		<input type="search" placeholder="Search...">		    	
+		<button>Search</button>
+	</form>
+</section>
+	<table class="greyGridTable" text-align width="100%" style="text-align:center">
+<thead>
+<tr>
+<th>Usuario</th>
+<th>Minutes Played</th>
+<th>Total Hits</th>
+<th>Max Force</th>
+</tr>
+</thead>
+<tfoot>
+
+
+
+<tbody>
+<tr>
+<td style="width: 25%;"><form action='https://powerpadel.github.io/PowerPadel/MySession' method='GET'><input type="submit" value='SantiRecalde123' style="background-color: #4485b8; color: #fff; display: inline-block; padding: 2px 8px; font-weight: bold; border-radius: 5px;">
+</form></td>
+<td style="width: 25%;">1500</td>
+<td style="width: 25%;">8567</td>
+<td style="width: 25%;">2000</td>
+
+</tr>
+<tr>
+<td style="width: 25%;"><form action='https://powerpadel.github.io/PowerPadel/MySession' method='GET'><input type="submit" value='DaniAparicio87' style="background-color: #4485b8; color: #fff; display: inline-block; padding: 2px 8px; font-weight: bold; border-radius: 5px;">
+</form></td>
+<td style="width: 25%;">1200</td>
+<td style="width: 25%;">8000</td>
+<td style="width: 25%;">1900</td>
+</tr>
+<tr>
+<td style="width: 25%;"><form action='https://powerpadel.github.io/PowerPadel/MySession' method='GET'><input type="submit" value='Aitor_Merino9' style="background-color: #4485b8; color: #fff; display: inline-block; padding: 2px 8px; font-weight: bold; border-radius: 5px;">
+</form></td>
+<td style="width: 25%;">1050</td>
+<td style="width: 25%;">7200</td>
+<td style="width: 25%;">1760</td>
+</tr>
+<tr>
+<td style="width: 25%;"><form action='https://powerpadel.github.io/PowerPadel/MySession' method='GET'><input type="submit" value='AlfonsoJim35' style="background-color: #4485b8; color: #fff; display: inline-block; padding: 2px 8px; font-weight: bold; border-radius: 5px;">
+</form></td>
+<td style="width: 25%;">1000</td>
+<td style="width: 25%;">7000</td>
+<td style="width: 25%;">1600</td>
+</tr>
+<tr>
+<td style="width: 25%;"><form action='https://powerpadel.github.io/PowerPadel/MySession' method='GET'><input type="submit" value='AlbertoLopez57' style="background-color: #4485b8; color: #fff; display: inline-block; padding: 2px 8px; font-weight: bold; border-radius: 5px;">
+</form></td>
+<td style="width: 25%;">950</td>
+<td style="width: 25%;">6700</td>
+<td style="width: 25%;">1450</td>
+</tr>
+<tr>
+<td style="width: 25%;"><form action='https://powerpadel.github.io/PowerPadel/MySession' method='GET'><input type="submit" value='SusanaGonzalez43' style="background-color: #4485b8; color: #fff; display: inline-block; padding: 2px 8px; font-weight: bold; border-radius: 5px;">
+</form></td>
+<td style="width: 25%;">900</td>
+<td style="width: 25%;">6000</td>
+<td style="width: 25%;">1200</td>
+</tr>
+<tr>
+<td style="width: 25%;"><form action='https://powerpadel.github.io/PowerPadel/MySession' method='GET'><input type="submit" value='JorgeMartin_99' style="background-color: #4485b8; color: #fff; display: inline-block; padding: 2px 8px; font-weight: bold; border-radius: 5px;">
+</form></td>
+<td style="width: 25%;">850</td>
+<td style="width: 25%;">5400</td>
+<td style="width: 25%;">920</td>
+</tr>
+</tbody>
+</table>
+
+    </p>
