@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <title>Profile</title>
@@ -75,12 +76,77 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
             <h2></h2>
           </div>
         </div>
-        <div class="w3-container">
-          <p><i class="fa fa-user fa-fw w3-margin-right w3-large w3-text-teal"></i>Daniel Aparicio</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Madrid, Spain</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>daniel@mail.com</p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>1224435534</p>
-          <p><i class="fa fa-cog fa-fw w3-margin-right w3-large w3-text-teal"></i>Change Settings</p>
+
+		 <script>
+    var down = document.getElementById("GFG_DOWN");
+            
+    // Create a break line element
+    var br = document.createElement("br"); 
+    function GFG_Fun() {
+	 var table0 = document.getElementById("a")
+                
+    // Create a form synamically
+    var form = document.createElement("form");
+    form.setAttribute("method", "post");
+    form.setAttribute("action", "Update Personal Details");
+  
+    // Create an input element for Full Name
+    var FN = document.createElement("input");
+    FN.setAttribute("type", "text");
+    FN.setAttribute("name", "FullName");
+    FN.setAttribute("placeholder", "Full Name");
+  
+     // Create an input element for date of birth
+     var City = document.createElement("input");
+     City.setAttribute("type", "text");
+     City.setAttribute("name", "City");
+     City.setAttribute("placeholder", "City");
+  
+     // Create an input element for emailID
+     var EID = document.createElement("input");
+     EID.setAttribute("type", "text");
+     EID.setAttribute("name", "emailID");
+     EID.setAttribute("placeholder", "E-Mail ");
+  
+      // Create an input element for Phone
+      var PWD = document.createElement("input");
+      PWD.setAttribute("type", "Phone");
+      PWD.setAttribute("name", "Phone");
+      PWD.setAttribute("placeholder", "Phone");
+  
+
+  
+                // create a submit button
+                var s = document.createElement("input");
+                s.setAttribute("type", "Update");
+                s.setAttribute("value", "Update");
+                  
+                // Append the full name input to the form
+                form.appendChild(FN); 
+                  
+                // Inserting a line break
+                form.appendChild(br.cloneNode()); 
+                  
+                // Append the City to the form
+                form.appendChild(City); 
+                form.appendChild(br.cloneNode()); 
+                  
+                // Append the emailID to the form
+                form.appendChild(EID); 
+                form.appendChild(br.cloneNode()); 
+                  
+                // Append the Phone to the form
+                form.appendChild(PWD); 
+                form.appendChild(br.cloneNode()); 
+                  
+
+                  
+                // Append the submit button to the form
+                form.appendChild(s); 
+  
+                table0.appendChild(form);
+            }
+			 </script>
           
           <hr>
           <hr>
@@ -100,7 +166,14 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
           <p class="w3-large"><b><i class="fa fa-users fa-fw w3-margin-right w3-text-teal"></i>Social Statistics</b></p>
           <p>Followers  &nbsp;&nbsp;      35</p>
           <p>Following  &nbsp;&nbsp;      42
-          
+                  <div id ="a" class="w3-container">
+          <p><i class="fa fa-user fa-fw w3-margin-right w3-large w3-text-teal"></i>Daniel Aparicio</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Madrid, Spain</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>daniel@mail.com</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>1224435534</p>
+          <p><button onClick="GFG_Fun()">
+            Update Details
+        </button></p>
 
     </body>
            
